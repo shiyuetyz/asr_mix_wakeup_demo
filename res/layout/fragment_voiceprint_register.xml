@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wakeup_text"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/informaton"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:text="请按住下方按钮，朗读出口令进行注册\n0/4"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/kouling"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:text="口令词：“语音无处不在”"
+        android:textSize="15sp" />
+    
+    
+
+    <TextView
+        android:id="@+id/yinliang"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:text=""
+        android:textColor="@color/txt_gray"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我想重说"
+        android:visibility="gone"
+        
+         />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/ProgressBarMusicStyle"
+        android:layout_width="match_parent"
+        android:layout_height="12dip"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="4dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="0"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/buttonswzc1"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="4dp"
+        android:text="按住说话"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp" 
+         android:visibility="gone"
+        />
+     <Button
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="54dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="8dp"
+       
+        
+        android:text="reset"
+        android:textSize="22sp" 
+         android:visibility="gone"
+        />
+
+</LinearLayout>

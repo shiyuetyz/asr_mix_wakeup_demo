@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="LinedTextView">
+
+        <!-- 线条的宽度 -->
+        <attr name="line_stoke_width" format="dimension" />
+        <!-- 实线宽度 -->
+        <attr name="line_dash_on_width" format="dimension" />
+        <!-- 虚线的宽度 -->
+        <attr name="line_dash_off_width" format="dimension" />
+        <!-- 线条的颜色 -->
+        <attr name="line_color" format="color" />
+        <!-- 划线的条件 -->
+        <attr name="lines_according">
+
+            <!-- 根据输入的行数划线 -->
+            <enum name="line_count" value="1" />
+            <!-- 根据控件高度画出所有的线 -->
+            <enum name="view_height" value="2" />
+        </attr>
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+	<RelativeLayout
+		android:id="@+id/ly2"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:background="@drawable/mic_bk">
+
+		<cn.yunzhisheng.demo.view.MicrophoneSoundEffectRender
+			android:id="@+id/micSoundRender"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true" >
+		</cn.yunzhisheng.demo.view.MicrophoneSoundEffectRender>
+		
+		<Button
+			android:id="@+id/btnMic"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:background="@drawable/btn_mic" />
+		
+		
+		<ImageView
+			android:id="@+id/imageViewRecognizeBg"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:src="@drawable/mic_recognize_bk" />
+		
+		<ImageView
+			android:id="@+id/imageViewRecognize"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:src="@drawable/recognize" />
+		
+	</RelativeLayout>
+
+</merge>

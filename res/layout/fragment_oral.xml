@@ -1,0 +1,229 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:attrs="http://schemas.android.com/apk/res/cn.yunzhisheng.demo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6e6e6"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/chinese_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/title_new2"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/logo_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/back_normal_new" />
+
+            <TextView
+                android:id="@+id/textview1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:text="口语评测"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/oral_icon" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/content_bk"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin" >
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical" >
+
+                <cn.yunzhisheng.demo.view.LinedTextView
+                    android:id="@+id/tvSentence"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:fadingEdge="vertical"
+                    android:gravity="top"
+                    android:inputType="textCapSentences|textMultiLine|textShortMessage"
+                    android:lineSpacingExtra="2dp"
+                    android:lineSpacingMultiplier="2"
+                    android:longClickable="false"
+                    android:minLines="10"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="10dp"
+                    android:scrollbars="vertical"
+                    android:textSize="15sp"
+                    attrs:line_dash_off_width="3dp"
+                    attrs:line_dash_on_width="6dp"
+                    attrs:line_stoke_width="1dp"
+                    attrs:lines_according="view_height" />
+            </ScrollView>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" >
+
+            <ImageView
+                android:id="@+id/buttonPrev"
+                android:layout_width="60dp"
+                android:layout_height="54dp"
+                android:layout_alignParentLeft="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/btn_pre_selector" />
+
+            <ImageView
+                android:id="@+id/buttonNext"
+                android:layout_width="60dp"
+                android:layout_height="54dp"
+                android:layout_alignParentRight="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/btn_next_selector" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/totalScore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/txt_gray"
+        android:textSize="20sp" />
+            <TextView
+            android:id="@+id/infortext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/mic_bk"
+            android:gravity="center_horizontal|bottom"
+            android:paddingTop="5dip"
+            android:text="按住说话"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/ProgressBarMusicStyle"
+        android:layout_width="match_parent"
+        android:layout_height="12dip"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="4dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="0"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/buttonPrev"
+            android:layout_width="60dp"
+            android:layout_height="54dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/btn_pre_selector"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/buttonRecord"
+            android:layout_width="0dp"
+            android:layout_height="54dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:text="开始测试"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:visibility="gone" />
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <include
+                android:layout_width="fill_parent"
+                android:layout_height="100dip"
+                layout="@layout/include_mic" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" >
+
+                <Button
+                    android:id="@+id/buttonUserSentence"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/btn_paly_selector"
+                    android:text="播放录音"
+                    android:textColor="#1E1E1E"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/buttonUserWord"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/btn_paly_selector"
+                    android:text="播放单词"
+                    android:textColor="#1E1E1E"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/buttonNext"
+            android:layout_width="60dp"
+            android:layout_height="54dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/btn_next_selector"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

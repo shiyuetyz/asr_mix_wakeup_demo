@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">云知声语音魔块</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="sms_next">下一条</string>
+    <string name="sms_back">上一条</string>
+    <string name="back">返回</string>
+    <string name="loadingsms">正在获取本地短信息，请稍后！</string>
+    <string name="first_tip">已经是第一条信息</string>
+    <string name="last_tip">已经是最后一条信息</string>
+    <string name="loaddata">正在初始化数据......</string>
+    <string name="nodata">没有文本可以获取......</string>
+    <string name="choose_voice_type">选择合成类型 </string>
+
+    <string-array name="sentences">
+        <item>I was coming downstairs to have breakfast when the post came.</item>
+        <item>I was  waiting for a letter from my friend Sam.</item>
+        <item>so I picked the letters up and looked  through them.</item>
+        <item>"I wasn't surprised to see that there were some bills."</item>
+        <item>There was an invitation to a party.</item>
+        <item>"There wasn't a letter from Sam."</item>
+        <item>There was a postcard, showing some beaches and the sea.</item>
+        <item>What a nice view!</item>
+        <item>I turned the postcard over.</item>
+        <item>It wasn\'t easy to read.</item>
+        <item>The rain had made the writing unclear.</item>
+        <item>including the name of the person who had sent the postcard.</item>
+        <item>Who was it from?</item>
+        <item>I tried to read any of the words.</item>
+        <item>I could read \"Dear Tom, I\'m having a lovely time in \".</item>
+        <item>Then the writing became unclear.</item>
+        <item>"I couldn't read anything else."</item>
+        <item>Who had gone to the seaside?</item>
+        <item>"I couldn't think of anyone!"</item>
+        <item>It was a mystery.</item>
+        <item>There was another mystery too.</item>
+        <item>"Where was Sam's letter?"</item>
+        <item>Just then the phone rang.</item>
+        <item>It was Sam!</item>
+        <item>"I'm calling to see if you got my postcard, "</item>
+        <item>he said.</item>
+        <item>We are at the seaside, not in London.</item>
+        <item>We changed our  minds.</item>
+        <item>Mum and Dad are resting after taking a walk.</item>
+        <item>"So I'm ringing you."</item>
+        <item>"I'm sorry I didn't write a letter."</item>
+        <item>"I've been so busy!"</item>
+        <item>Both mysteries were solved!</item>
+        <item>I was coming downstairs to have breakfast.</item>
+    </string-array>
+    
+    
+    <string name="app_menu_surelogout">确定退出程序吗？</string>
+    <string name="sure">确定</string>
+    <string name="cancle">取消</string>
+    
+    <string name="tv_result">唤醒口令：“你好魔方”</string>
+    <string name="tv_btnInit">初始化引擎</string>
+    <string name="tv_btnStart">开始唤醒</string>
+    <string name="tv_btnStop">停止唤醒</string>
+    
+    
+    <string name="app_error">应用程序错误</string>
+    <string name="app_error_message">很抱歉，应用程序出现错误，即将退出。\n请提交错误报告，我们会尽快修复这个问题！</string>
+    <string name="submit_report">提交报告</string>
+    
+    <string name="float_pop_text">您在可以在程序主界面对着麦克风说</string>
+    <string name="text_1">乐视电视</string>
+    <string name="text_2">录音保持开启，耗电量显著增加</string>
+    <string name="text_3">同时与其他软件冲突，如微信无法录音</string>
+    <string name="text_4">可以点击停止唤醒按钮</string>
+    <string name="new_toast_message"></string>
+
+    
+    <string name="copyrightname">北京云知声信息技术有限公司 </string>
+    <string name="copyrightcopy">Copyright© 2012 YunZhiSheng Inc.All rights reserved</string>
+    <string name="copyrightright">All rights reserved.</string>
+
+</resources>
